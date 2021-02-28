@@ -1,8 +1,12 @@
-import React from 'react';
+import { Button } from './components/Button'
 
 function App() {
     return (
-      <h1>Hello world</h1>
+      <>
+        <Button color='red'>botao1</Button>
+        <Button color='green'>botao2</Button>
+        <Button color='blue'>botao3</Button>
+      </>
     );
 }
 
