@@ -36,6 +36,7 @@ export function CountdownProvider({children}: CountdownProviderProps){
     clearTimeout(countdownTimeout);
     setIsActive(false);
     setTime(0.1 * 60);
+    setHasFinished(false);
   }
 
   useEffect(()=>{
@@ -49,7 +50,7 @@ export function CountdownProvider({children}: CountdownProviderProps){
       setIsActive(false);
       startNewChallenge();
     }
-  }, [isActive, time]);
+  }, [isActive, time, startNewChallenge]);
 
   
   return(
